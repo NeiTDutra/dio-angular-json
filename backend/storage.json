@@ -1,0 +1,22 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "nome": "Fulano",
+            "titulo": "A primeira mensagem",
+            "mensagem": "Geralmente a primeira mensagem é um Hello World!!!"
+        },
+        {
+            "id": "2",
+            "nome": "Cicrano",
+            "titulo": "A segunda mensagem",
+            "mensagem": "Geralmente a segunda mensagem é uma do Cicrano!!!"
+        },
+        {
+            "id": "3",
+            "nome": "Beltrano",
+            "titulo": "A terceira mensagem",
+            "mensagem": "Geralmente a terceira mensagem pode ser de qualquer um, inclusive do Beltrano!!!"
+        }
+    ]
+}
