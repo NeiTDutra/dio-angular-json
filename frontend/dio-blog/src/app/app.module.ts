@@ -26,12 +26,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    HomeComponent,
-    NavbarComponent,
-    FooterComponent,
-    FeedComponent,
-    ContactComponent
+    AppComponent
   ]
 })
 export class AppModule { }
