@@ -17,19 +17,34 @@
             <div>
                 <h3 class="text-center mb-4 text-monospace">Digite abaixo seu comentário</h3>
                 <div class="form-group">
+                    <label for="name" class="text-monospace">Nome</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Name example" [(ngModel)]="post.nome">
+                </div>
+                <div class="form-group">
                     <label for="title" class="text-monospace">Título</label>
-                    <input type="text" name="title" id="title" class="form-control" placeholder="Title example">
+                    <input type="text" name="title" id="title" class="form-control" placeholder="Title example" [(ngModel)]="post.titulo">
                 </div>
                 <div class="form-group">
                     <label for="message" class="text-monospace">Mensagem</label>
-                    <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Message example"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Message example" [(ngModel)]="post.mensagem"></textarea>
                 </div>
                 <div class="d-flex justify-content-center pt-4">
-                    <button class="btn btn-outline-info w-25">Publicar</button>
+                    <button class="btn btn-outline-info w-25" (click)="newPost()">Publicar</button>
                 </div>
             </div>
             <hr class="mb-4 mt-5">
             <h4 class="text-center mb-5">Comentários adicionados</h4>
+            <div class="container">
+                <div class="card mb-4" *ngFor="let post of listPost">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ post.titulo }}</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">{{ post.nome }} - id: {{ post.id }}</p>
+                        <p class="card-text">{{ post.mensagem }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

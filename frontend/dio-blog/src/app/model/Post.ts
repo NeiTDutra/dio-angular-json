@@ -1,7 +1,7 @@
 export class Post {
     
-    public id: number | undefined
-    public nome: string | undefined
-    public titulo: string | undefined
-    public mensagem: string | undefined
+    public id!: number;
+    public nome!: string;
+    public titulo!: string;
+    public mensagem!: string;
 }
